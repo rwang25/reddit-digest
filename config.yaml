@@ -1,0 +1,46 @@
+# Subreddits to read (newest posts and comments).
+subreddits:
+  - options
+  - thetagang
+  - CoveredCalls
+  - Optionswheel
+  - optionstrading
+  - ai_trading
+  - ClaudeAI
+
+per_sub_limit: 100   # newest posts, and newest comments, per sub per run
+lookback_hours: 36   # ignore anything older
+keep_days: 30        # digests older than this are deleted
+
+# Topic name -> regular expressions (case-insensitive). An item matches a
+# topic when any of its patterns appears in the title or text.
+topics:
+  what am I missing:
+    - "what am i missing"
+    - "what('s| is) the risk"
+    - "sanity check"
+    - "am i (crazy|missing)"
+  assignment:
+    - "assign(ed|ment)"
+    - "called away"
+    - "early exercise"
+    - "ex[- ]?div"
+  earnings inside a trade:
+    - "earnings"
+    - "\\bER\\b"
+  naked or uncovered:
+    - "naked (call|put)s?"
+    - "uncovered"
+  stops and gaps:
+    - "stop[- ]?loss"
+    - "gapp?(ed)? (up|down|past|through)"
+  exits and emotions:
+    - "exit (plan|strategy)"
+    - "when (do|should) (i|you) (close|exit|roll)"
+    - "emotion"
+    - "panic(ked)?"
+  agents trading:
+    - "(trading )?bot"
+    - "agent"
+    - "\\bmcp\\b"
+    - "claude"
